@@ -25,12 +25,14 @@ module.exports = [
                 rules: {
                     'lodash-imports': require('./rules/lodash-imports.js'),
                     'restrict-direct-strings-vue': require('./rules/restrict-direct-strings-vue.js'),
+                    'check-unremoved-event-listeners': require('./rules/check-unremoved-event-listeners.js'),
                 },
             },
         },
         rules: {
             'custom-rules/lodash-imports': 'error',
             'custom-rules/restrict-direct-strings-vue': 'error',
+            'custom-rules/check-unremoved-event-listeners': 'error',
         },
     },
 ];
